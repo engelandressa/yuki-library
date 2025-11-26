@@ -40,6 +40,16 @@ body {
     background-image: url(/img/background-yuki-library.png);
 }
 
+#andressa {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* centro horizontal */
+    align-items: center;
+    /* centro vertical */
+    flex-direction: column;
+}
+
 .card-blur {
     background: rgba(247, 247, 247, 0.55);
     /* caixa branca com transparência */
@@ -67,4 +77,22 @@ body {
     border: 0;
     border-top-right-radius: 10px !important;
     border-top-left-radius: 10px !important;
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animação no hover */
+.team-member img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.team-grid a {
+    text-decoration: none !important;
 }
